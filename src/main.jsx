@@ -6,12 +6,16 @@ import Landing from "./components/landing";
 import Imyirondoro from "./components/imyirondoro";
 import Dashboard from "./components/dashboard";
 import NotFound from "./components/notFound";
+import UserDash from "./OtherUsers/userDash";
+import Group from "./OtherUsers/Groups";
 
 const router = createBrowserRouter([
   { path: "/", element: <Landing /> },
   { path: "/credentials", element: <Imyirondoro /> },
   { path: "/dashboard", element: <Dashboard /> },
-  {path:"*",element:<NotFound/>}
+  { path: "/userdashboard", element: <UserDash /> },
+  { path: "*", element: <NotFound /> },
+  { path: "/rev", element: <Group /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
